@@ -43,9 +43,9 @@ fun  height(heights: List<Double>):PeoplesHeight {
 //height and weight. Sort the list in order of descending age.
 data class Person(var name:String, var age:Int, var height:Double, var weight:Double)
 fun personsorted(){
-    val person1= Person("Jackson",33,5.78,60.90)
-    val person2=Person("Oliver",23,5.45,50.00)
-    val person3=Person("Tasha",45,6.20,60.30)
+    val person1= Person("Jackson",43,6.78,80.90)
+    val person2=Person("Oliver",33,7.45,40.00)
+    val person3=Person("Tasha",15,6.20,30.30)
     var people= listOf(person1,person2,person3)
     var sortedAges=people.sortedByDescending { people-> people.age }
     println(sortedAges)
@@ -53,8 +53,8 @@ fun personsorted(){
 //Question 4
 //Given a list similar to the one above, write a function in which you will create 2 more people objects and add them to the list at one go.
 fun addedPeople() {
-   var person4= Person("Bridget",22,124.0,68.0)
-   var person5= Person("Racheal",22,142.0,58.0)
+   var person4= Person("Bridget",42,154.0,78.0)
+   var person5= Person("Racheal",32,132.0,50.0)
    println(listOf(person4, person5))
 
 }
